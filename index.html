@@ -8,8 +8,8 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <style>
     .card-hover:hover {
-      transform: scale(1.03);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      transform: scale(1.02);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     }
     .card-hover {
       transition: all 0.3s ease-in-out;
@@ -26,107 +26,53 @@
   </header>
 
   <!-- Projects Section -->
-  <section class="max-w-7xl mx-auto px-6 py-12">
+  <section class="max-w-3xl mx-auto px-6 py-12">
     <h2 class="text-3xl font-bold mb-8 text-center text-white" data-aos="fade-up">Projects</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <ul class="space-y-6">
 
-      <!-- Project 1: HR Analytics -->
-      <div class="bg-white text-gray-800 rounded-lg shadow card-hover overflow-hidden flex flex-col" data-aos="zoom-in">
-        <img 
-          src="https://tse2.mm.bing.net/th/id/OIP.RINUzqKjB_1-kzLSg_u6vgHaDg?pid=Api" 
-          alt="HR Analytics" 
-          class="w-full h-48 object-cover"
-        >
-        <div class="p-6 flex-grow flex flex-col">
-          <h3 class="text-xl font-semibold mb-2">HR Analytics Dashboard</h3>
-          <p class="mb-4 flex-grow">Power BI dashboard analyzing attrition, performance, and satisfaction using HR data.</p>
-          <a href="https://github.com/nagbhushanpatil/HR-DATA-POWER-BI-VISUALISATION" target="_blank" class="text-blue-600 hover:underline">
-            View on GitHub
-          </a>
-        </div>
-      </div>
+      <!-- Project 1 -->
+      <li class="bg-white text-gray-800 rounded-lg shadow p-6 card-hover" data-aos="fade-up">
+        <h3 class="text-xl font-semibold">HR Analytics Dashboard</h3>
+        <p class="mt-2 mb-3">Power BI dashboard analyzing attrition, performance, and satisfaction using HR data.</p>
+        <a href="https://github.com/nagbhushanpatil/HR-DATA-POWER-BI-VISUALISATION" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
+      </li>
 
-      <!-- Project 2: Walmart Sales -->
-      <div class="bg-white text-gray-800 rounded-lg shadow card-hover overflow-hidden flex flex-col" data-aos="zoom-in">
-        <img 
-          src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Walmart_logo.svg" 
-          alt="Walmart Logo" 
-          class="w-full h-48 object-contain p-4"
-        >
-        <div class="p-6 flex-grow flex flex-col">
-          <h3 class="text-xl font-semibold mb-2">Walmart Sales Analysis</h3>
-          <p class="mb-4 flex-grow">SQL-based analysis of Walmart’s transactional data to uncover trends and performance.</p>
-          <a href="https://github.com/nagbhushanpatil/Walmart-Sales-Analysis-using-SQL" target="_blank" class="text-blue-600 hover:underline">
-            View on GitHub
-          </a>
-        </div>
-      </div>
+      <!-- Project 2 -->
+      <li class="bg-white text-gray-800 rounded-lg shadow p-6 card-hover" data-aos="fade-up">
+        <h3 class="text-xl font-semibold">Walmart Sales Analysis</h3>
+        <p class="mt-2 mb-3">SQL-based analysis of Walmart’s transactional data to uncover trends and performance.</p>
+        <a href="https://github.com/nagbhushanpatil/Walmart-Sales-Analysis-using-SQL" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
+      </li>
 
       <!-- Project 3 -->
-      <div class="bg-white text-gray-800 rounded-lg shadow card-hover overflow-hidden flex flex-col" data-aos="zoom-in">
-        <img 
-          src="https://via.placeholder.com/400x200" 
-          alt="Project Three" 
-          class="w-full h-48 object-contain p-4"
-        >
-        <div class="p-6 flex-grow flex flex-col">
-          <h3 class="text-xl font-semibold mb-2">Project Three</h3>
-          <p class="mb-4 flex-grow">Brief description of your third project.</p>
-          <a href="https://github.com/yourusername/project3" target="_blank" class="text-blue-600 hover:underline">
-            View on GitHub
-          </a>
-        </div>
-      </div>
+      <li class="bg-white text-gray-800 rounded-lg shadow p-6 card-hover" data-aos="fade-up">
+        <h3 class="text-xl font-semibold">Project Three</h3>
+        <p class="mt-2 mb-3">Brief description of your third project.</p>
+        <a href="https://github.com/yourusername/project3" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
+      </li>
 
-      <!-- ✅ Project 4: Finance Insights (with uploaded dollar icon) -->
-      <div class="bg-white text-gray-800 rounded-lg shadow card-hover overflow-hidden flex flex-col" data-aos="zoom-in">
-        <img 
-          src="https://github.com/nagbhushanpatil/Nagbhushan-Patil-Portfolio/blob/c4fc8b895fef0f36bb8a498a42918acefcb0cb27/dollar.jpg" 
-          alt="dollar.jpg" 
-          class="w-full h-48 object-contain p-4"
-        >
-        <div class="p-6 flex-grow flex flex-col">
-          <h3 class="text-xl font-semibold mb-2">Finance Insights</h3>
-          <p class="mb-4 flex-grow">A dashboard showcasing financial KPIs, ROI trends, and investment breakdowns.</p>
-          <a href="https://github.com/yourusername/finance-dashboard" target="_blank" class="text-blue-600 hover:underline">
-            View on GitHub
-          </a>
-        </div>
-      </div>
+      <!-- Project 4 -->
+      <li class="bg-white text-gray-800 rounded-lg shadow p-6 card-hover" data-aos="fade-up">
+        <h3 class="text-xl font-semibold">Finance Insights</h3>
+        <p class="mt-2 mb-3">A dashboard showcasing financial KPIs, ROI trends, and investment breakdowns.</p>
+        <a href="https://github.com/yourusername/finance-dashboard" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
+      </li>
 
-      <!-- Project 5: Bike Rental -->
-      <div class="bg-white text-gray-800 rounded-lg shadow card-hover overflow-hidden flex flex-col" data-aos="zoom-in">
-        <img 
-          src="https://cdn-icons-png.flaticon.com/512/1082/1082284.png" 
-          alt="Bike Icon" 
-          class="w-full h-48 object-contain p-4"
-        >
-        <div class="p-6 flex-grow flex flex-col">
-          <h3 class="text-xl font-semibold mb-2">Bike Rental Analytics</h3>
-          <p class="mb-4 flex-grow">Analyzing bike rental data to identify usage hours, demographics, and demand by location.</p>
-          <a href="https://github.com/yourusername/bike-analytics" target="_blank" class="text-blue-600 hover:underline">
-            View on GitHub
-          </a>
-        </div>
-      </div>
+      <!-- Project 5 -->
+      <li class="bg-white text-gray-800 rounded-lg shadow p-6 card-hover" data-aos="fade-up">
+        <h3 class="text-xl font-semibold">Bike Rental Analytics</h3>
+        <p class="mt-2 mb-3">Analyzing bike rental data to identify usage hours, demographics, and demand by location.</p>
+        <a href="https://github.com/yourusername/bike-analytics" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
+      </li>
 
-      <!-- Project 6: Sales Profit Visualizer -->
-      <div class="bg-white text-gray-800 rounded-lg shadow card-hover overflow-hidden flex flex-col" data-aos="zoom-in">
-        <img 
-          src="sales-icon.png" 
-          alt="Sales Icon" 
-          class="w-full h-48 object-contain p-4"
-        >
-        <div class="p-6 flex-grow flex flex-col">
-          <h3 class="text-xl font-semibold mb-2">Sales Profit Visualizer</h3>
-          <p class="mb-4 flex-grow">A visual tool for understanding profit margins across departments and time periods.</p>
-          <a href="https://github.com/yourusername/sales-visualizer" target="_blank" class="text-blue-600 hover:underline">
-            View on GitHub
-          </a>
-        </div>
-      </div>
+      <!-- Project 6 -->
+      <li class="bg-white text-gray-800 rounded-lg shadow p-6 card-hover" data-aos="fade-up">
+        <h3 class="text-xl font-semibold">Sales Profit Visualizer</h3>
+        <p class="mt-2 mb-3">A visual tool for understanding profit margins across departments and time periods.</p>
+        <a href="https://github.com/yourusername/sales-visualizer" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
+      </li>
 
-    </div>
+    </ul>
   </section>
 
   <!-- Footer -->
