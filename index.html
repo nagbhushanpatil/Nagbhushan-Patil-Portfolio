@@ -14,21 +14,26 @@
     .card-hover {
       transition: all 0.3s ease-in-out;
     }
+    .gradient-bg {
+      background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    }
   </style>
 </head>
-<body class="bg-blue-900 text-white min-h-screen">
+<body class="bg-gray-100 text-gray-900 min-h-screen font-sans">
 
   <!-- Header -->
-  <header class="p-6">
-    <div class="max-w-4xl mx-auto bg-white rounded-xl shadow text-center p-6" data-aos="fade-down">
-      <h1 class="text-4xl font-bold text-gray-800">Nagbhushan Patil - Business Analyst Portfolio</h1>
+  <header id="home" class="p-6 pt-12">
+    <div class="max-w-6xl mx-auto bg-white rounded-xl shadow-lg text-center p-8" data-aos="fade-down">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-2">Nagbhushan Patil</h1>
+      <p class="text-xl text-gray-600">Business Analyst | Data Visualization Expert</p>
     </div>
   </header>
 
   <!-- Featured Project -->
-  <section class="max-w-4xl mx-auto px-6 py-12" data-aos="fade-up">
-    <div class="bg-yellow-100 text-gray-900 rounded-lg shadow-lg p-8 card-hover">
-      <h2 class="text-2xl font-bold mb-2">🌟 Featured Project: HR Analytics Dashboard</h2>
+  <section id="projects" class="max-w-6xl mx-auto px-6 py-12">
+    <h2 class="text-3xl font-bold mb-8 text-center text-gray-800" data-aos="fade-up">Featured Project</h2>
+    <div class="bg-yellow-100 text-gray-900 rounded-lg shadow-lg p-8 card-hover" data-aos="fade-up">
+      <h2 class="text-2xl font-bold mb-2">🌟 HR Analytics Dashboard</h2>
       <p class="mb-4 text-lg">
         A Power BI dashboard analyzing employee attrition, job satisfaction, and performance metrics.
         This project showcases deep insights through powerful data visualization and storytelling.
@@ -44,52 +49,60 @@
   </section>
 
   <!-- Other Projects -->
-  <section class="max-w-3xl mx-auto px-6 pb-12">
-    <h2 class="text-3xl font-bold mb-8 text-center text-white" data-aos="fade-up">Other Projects</h2>
-    <ul class="space-y-6">
-
-      <!-- Project 2 -->
+  <section class="max-w-6xl mx-auto px-6 pb-12">
+    <h2 class="text-3xl font-bold mb-8 text-center text-gray-800" data-aos="fade-up">Other Projects</h2>
+    <ul class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <li class="bg-white text-gray-800 rounded-lg shadow p-6 card-hover" data-aos="fade-up">
         <h3 class="text-xl font-semibold">Walmart Sales Analysis</h3>
         <p class="mt-2 mb-3">SQL-based analysis of Walmart’s transactional data to uncover trends and performance.</p>
         <a href="https://github.com/nagbhushanpatil/Walmart-Sales-Analysis-using-SQL" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
       </li>
-
-      <!-- Project 3 -->
-      <li class="bg-white text-gray-800 rounded-lg shadow p-6 card-hover" data-aos="fade-up">
-        <h3 class="text-xl font-semibold">Project Three</h3>
-        <p class="mt-2 mb-3">Brief description of your third project.</p>
-        <a href="https://github.com/yourusername/project3" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
-      </li>
-
-      <!-- Project 4 -->
-      <li class="bg-white text-gray-800 rounded-lg shadow p-6 card-hover" data-aos="fade-up">
+      <li class="bg-white text-gray-800 rounded-lg shadow p-6 card-hover" data-aos="fade-up" data-aos-delay="100">
         <h3 class="text-xl font-semibold">Salary Analysis Using Regression</h3>
         <p class="mt-2 mb-3">Regression-based project examining salary prediction using experience and education variables.</p>
         <a href="https://github.com/nagbhushanpatil/Salary-Prediction-Using-Regression" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
       </li>
-
-      <!-- Project 5 (Updated) -->
-      <li class="bg-white text-gray-800 rounded-lg shadow p-6 card-hover" data-aos="fade-up">
+      <li class="bg-white text-gray-800 rounded-lg shadow p-6 card-hover" data-aos="fade-up" data-aos-delay="200">
         <h3 class="text-xl font-semibold">Bike Sales Analysis</h3>
         <p class="mt-2 mb-3">Analyzing bike sales data by region, customer demographics, and seasonal trends.</p>
         <a href="https://github.com/nagbhushanpatil/Bike-Sales-Analysis-In-Excel" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
       </li>
-
-      <!-- Project 6 -->
-      <li class="bg-white text-gray-800 rounded-lg shadow p-6 card-hover" data-aos="fade-up">
-        <h3 class="text-xl font-semibold">Project 6</h3>
+      <li class="bg-white text-gray-800 rounded-lg shadow p-6 card-hover" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="text-xl font-semibold">Sales Visualizer</h3>
         <p class="mt-2 mb-3">A visual tool for understanding profit margins across departments and time periods.</p>
-        <a href="https://github.com/yourusername/sales-visualizer" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
+        <a href="https://github.com/nagbhushanpatil/sales-visualizer" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
       </li>
-
     </ul>
   </section>
 
+  <!-- Contact Section -->
+  <section id="contact" class="max-w-6xl mx-auto px-6 py-12">
+    <h2 class="text-3xl font-bold mb-8 text-center text-gray-800" data-aos="fade-up">Get in Touch</h2>
+    <div class="bg-white rounded-lg shadow-lg p-8 card-hover" data-aos="fade-up">
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700 font-semibold mb-2">Name</label>
+          <input type="text" id="name" name="name" class="w-full p-3 border rounded-lg" required>
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+          <input type="email" id="email" name="email" class="w-full p-3 border rounded-lg" required>
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
+          <textarea id="message" name="message" class="w-full p-3 border rounded-lg" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition">Send Message</button>
+      </form>
+    </div>
+  </section>
+
   <!-- Footer -->
-  <footer class="text-center p-6" data-aos="fade-up">
-    <p>© 2025 Nagbhushan Patil. Connect via 
-      <a href="mailto:your.email@example.com" class="underline text-blue-300">Email</a>
+  <footer class="gradient-bg text-center p-6">
+    <p class="text-white">© 2025 Nagbhushan Patil. Connect via 
+      <a href="mailto:nagbhushan.patil@example.com" class="underline text-yellow-300">Email</a> | 
+      <a href="https://linkedin.com/in/nagbhushanpatil" target="_blank" class="underline text vpc text-yellow-300">LinkedIn</a> | 
+      <a href="https://github.com/nagbhushanpatil" target="_blank" class="underline text-yellow-300">GitHub</a>
     </p>
   </footer>
 
